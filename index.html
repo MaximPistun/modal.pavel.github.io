@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="modal">
+            <div class="container">
+                <div class="modal__body">
+                    <div class="modal__window modal__free-task free-task">
+                        <p class="free-task__name">FREE TASK</p>
+                        <div class="free-task__when">
+                            date <span class="free-task__date">23/10/23</span> time <span class="free-task__time">15:30</span>
+                        </div>
+                        <div class="free-task__details">
+                            <p class="modal__title free-task__title">Take Dean from school</p>
+                            <p class="free-task__text">Details of the task can be here...</p>
+                        </div>
+                        <div class="model__box-btns">
+                            <button class="modal__btn free-task__btn">Yes, I take it</button>
+                            <button class="modal__btn modal__btn_transparent free-task__btn">Return to other tasks</button>
+                        </div>
+                    </div>
+                    <div class="modal__window modal__window-done window-done">
+                        <p class="modal__title window-done__title">
+                            Thanks, this task has been taken.
+                            <img src="img\lightning.svg" alt="lightning" class="window-done__img window-done__img_lightning">
+                        </p>
+                        <button class="modal__btn modal__btn_transparent window-done__btn">Return to other tasks</button>
+                        <img src="img\cloud.svg" alt="cloud" class="window-done__img window-done__img_cloud">
+                        <img src="img\clip-turquoise.svg" alt="clip" class="window-done__img window-done__img_clip">
+                    </div>
+
+
+                    <div class="modal__window modal__reminder reminder reminder_big ">
+                        <p class="modal__title reminder__title">
+                            Thanks, this task has been taken.
+                            <img src="img\lightning.svg" alt="lightning" class="reminder__img reminder__img_lightning">
+                        </p>
+                        <p class="reminder__text">38% of tasks are handled by our supporting network. <span>Big up!</span></p>
+                        <div class="reminder__subscription">
+                            <div class="reminder__selection">
+                                <input type="checkbox" name="sms" id="sms" >
+                                <label for="sms">SMS me a reminder</label>
+                            </div>
+                            <div class="reminder__selection">
+                                <input type="checkbox" name="calendar" id="calendar">
+                                <label for="calendar">Add to calendar</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="modal__btn reminder__btn">Submit</button>
+                        <img src="img\cloud.svg" alt="cloud" class="reminder__img reminder__img_cloud">
+                        <img src="img\jackdaw.svg" alt="jackdaw" class="reminder__img reminder__img_jackdaw">
+                    </div>
+
+
+                    <div class="modal__window reminder reminder_min">
+                        <div class="reminder__subscription">
+                            <div class="reminder__selection">
+                                <input type="checkbox" name="sms-min" id="sms-min" >
+                                <label for="sms-min">SMS me a reminder</label>
+                            </div>
+                            <div class="reminder__selection">
+                                <input type="checkbox" name="calendar-min" id="calendar-min">
+                                <label for="calendar-min">Add to calendar</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="modal__btn reminder__btn">Submit</button>
+                    </div>
+
+
+                    <div class="modal__window modal__placed-quote modal__placed-quote_light placed-quote">
+                        <p class="modal__title placed-quote__title">
+                            An inspirational quote can be placed here.
+                            <img src="img\star.svg" alt="star" class="placed-quote__img placed-quote__img_star">
+                        </p>
+                        <img src="img\turquoise-hands.svg" alt="turquoise hands" class="placed-quote__img placed-quote__img_turquoise-hands">
+                    </div>
+                    <div class="modal__window modal__placed-quote modal__placed-quote_dark placed-quote">
+                        <p class="modal__title placed-quote__title">An inspirational quote can be placed here.</p>
+                        <img src="img\circle.svg" alt="cercle" class="placed-quote__img placed-quote__img_cercle">
+                        <img src="img\yellow-hands.svg" alt="yellow hands" class="placed-quote__img placed-quote__img_yellow-hands">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+</body>
+</html>
